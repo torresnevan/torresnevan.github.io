@@ -100,23 +100,23 @@
 
         /* Image Placeholder */
         .image-placeholder {
-            background: #f0f0f0;
-            border: 2px dashed #ccc;
-            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 2rem 0;
-            border-radius: 8px;
-            color: #999;
-            font-size: 1.2rem;
+            overflow: hidden;
         }
-
+        .image-placeholder img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+            display: block;
+        }
         /* Video Placeholder */
         .video-placeholder {
             background: #e8e8e8;
             border: 2px dashed #aaa;
-            height: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -124,6 +124,18 @@
             border-radius: 8px;
             color: #888;
             font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-placeholder iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         /* Content Box */
@@ -181,6 +193,7 @@
     <!-- Hero Section -->
     <div class="hero">
         <h1>AI in Education</h1>
+        <h3>Building AI Literacy In The Classroom</h3>
     </div>
 
     <!-- Main Content -->
@@ -190,11 +203,10 @@
             <h2>What is Artificial Intelligence?</h2>
             <div class="content-box">
                 <h3>AI Explained</h3>
-                <p>AI, or Artificial Intelligence, refers to a type of algorithm produced from machine learning techniques. Watch the video below for further explanation! 
-                </p>
+                <p>AI, or artificial intelligence, is a technology that allows computers and machines to learn from data and make decisions similar to how humans do. It can recognize patterns, solve problems, and even improve its performance over time. Students interact with AI every day through tools like recommendations, chatbots, and smart assistants.</p>
             </div>
             <div class="image-placeholder">
-                <img src="imgs/ai one.jpg"></img>
+                <img src="imgs/ai1.jpeg"></img>
             </div>
         </section>
 
@@ -211,17 +223,16 @@
             <h2>Key Concepts</h2>
             <div class="grid">
                 <div class="grid-item">
-                    <h3>AI Company</h3>
-                    <p>A corporation that uses AI to produce a business product or service.</p>
+                    <h3>Machine Learning</h3>
+                    <p>A type of AI where computers learn from data instead of being directly programmed.</p>
                 </div>
                 <div class="grid-item">
-                    <h3>Model</h3>
-                    <p>A specific instance of an AI service. </p>
-                        <p>Ex: GPT-4, GPT-5</p>
+                    <h3>Algorithm</h3>
+                    <p>A set of rules or steps a computer follows to solve a problem.</p>
                 </div>
                 <div class="grid-item">
-                    <h3>[Topic 3]</h3>
-                    <p>[Description placeholder]</p>
+                    <h3>Chatbot / Virtual Assistant</h3>
+                    <p>Programs that talk or respond to users (Siri, ChatGPT, Gemini, Claude).</p>
                 </div>
             </div>
         </section>
@@ -230,10 +241,10 @@
         <section>
             <h2>AI Technologies in the Classroom</h2>
             <div class="content-box">
-                <p>[Content placeholder]</p>
+                <p>AI can be used across a variety of educational tools and resources. Today, some of the most popular AI services include ChatGPT, Quizlet, and Gemini. Each tool offers unique services that can help contribute to a student's academic journey. For students, AI can help provide a form of adaptive and personalized learning across a wide range of subjects. For teachers, AI can help with generating lesson plans, analyzing classroom data, and automating grading. </p>
             </div>
             <div class="image-placeholder">
-                [Image Placeholder - Classroom Technology]
+                <img src="/imgs/aiinedu.jpg">
             </div>
         </section>
     </div>
