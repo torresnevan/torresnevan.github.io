@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI in Education - Ethics</title>
+    <title>AI in Education - Disadvantages</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
         }
-
         nav {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 1rem 0;
@@ -25,7 +23,6 @@
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
         nav ul {
             list-style: none;
             display: flex;
@@ -35,11 +32,9 @@
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         nav ul li {
             margin: 0 1rem;
         }
-
         nav ul li a {
             color: white;
             text-decoration: none;
@@ -49,37 +44,30 @@
             transition: background 0.3s ease;
             font-weight: 500;
         }
-
         nav ul li a:hover {
             background: rgba(255,255,255,0.2);
         }
-
         nav ul li a.active {
             background: rgba(255,255,255,0.3);
         }
-
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 3rem 2rem;
             text-align: center;
         }
-
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
-
         section {
-            margin: 2rem 0;
+            margin: 3rem 0;
         }
-
         h2 {
             color: #667eea;
             font-size: 1.8rem;
@@ -87,47 +75,88 @@
             border-bottom: 3px solid #667eea;
             padding-bottom: 0.5rem;
         }
-
+        .content-box {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #667eea;
+        }
+        .content-box h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+        .disadvantage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .disadvantage-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+        .disadvantage-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(102,126,234,0.3);
+        }
+        .disadvantage-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
         .image-placeholder {
-            background: #f0f0f0;
-            border: 2px dashed #ccc;
-            height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-            color: #999;
-            font-size: 1.1rem;
+            margin: 2rem 0;
+            overflow: hidden;
         }
-
+        .image-placeholder img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+            display: block;
+        }
         .video-placeholder {
             background: #e8e8e8;
             border: 2px dashed #aaa;
-            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 1.5rem 0;
+            margin: 2rem 0;
             border-radius: 8px;
             color: #888;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
         }
-
-        .content-box {
-            background: #f9f9f9;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-            border-left: 4px solid #667eea;
+        .video-placeholder iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
-
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 2rem;
             margin-top: 4rem;
+        }
+        @media (max-width: 768px) {
+            .disadvantage-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -141,41 +170,60 @@
             <li><a href="references.html">References</a></li>
         </ul>
     </nav>
-
+    
     <div class="hero">
-        <h1>Ethical Considerations</h1>
-        <p>[Introduction to ethical issues surrounding AI in education]</p>
+        <h1>Disadvantages of AI in Education</h1>
+        <p>Challenges and concerns surrounding AI use in learning environments</p>
     </div>
-
+    
     <div class="container">
         <section>
-            <h2>Privacy and Data Protection</h2>
+            <h2>Understanding the Risks</h2>
             <div class="content-box">
-                <p>[Content about student data privacy placeholder]</p>
-            </div>
-            <div class="image-placeholder">
-                [Image Placeholder - Data Privacy]
+                <p>While incorporating AI into the educational environment offers significant upside, it may also bring hidden costs. Students who frequently utilize AI services for help may find themselves unable to work independently. AI responses often include hallucinations or inaccuracies that may incorrectly influence a student's learning. Other factors such as academic integrity, privacy concerns, and algorithmic biases pose significant risks for the widespread adoption of AI in education.</p>
             </div>
         </section>
 
         <section>
-            <h2>Bias and Fairness</h2>
+            <h2>Examining AI's Limitations</h2>
             <div class="video-placeholder">
-                [YouTube Video Embed Placeholder]
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ogcSQ-cFRVM?si=HgBjWC8QWAF_QAIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
         <section>
-            <h2>Responsible AI Use</h2>
-            <div class="content-box">
-                <p>[Content about ethical AI guidelines placeholder]</p>
-            </div>
-            <div class="image-placeholder">
-                [Image Placeholder - Ethical AI]
+            <h2>Key Disadvantages</h2>
+            <div class="disadvantage-grid">
+                <div class="disadvantage-card">
+                    <h3>Over-Reliance and Dependency</h3>
+                    <p>Students may become too dependent on AI tools, potentially weakening critical thinking skills, problem-solving abilities, and the capacity to work independently without technological assistance.</p>
+                </div>
+                <div class="disadvantage-card">
+                    <h3>Privacy and Data Concerns</h3>
+                    <p>AI systems collect vast amounts of student data, raising concerns about privacy, data security, and how this information might be used or shared without proper consent or protection.</p>
+                </div>
+                <div class="disadvantage-card">
+                    <h3>Academic Dishonesty</h3>
+                    <p>Easy access to AI-generated content tempts students to submit work that isn't their own, undermining academic integrity and preventing genuine learning and skill development.</p>
+                </div>
+                <div class="disadvantage-card">
+                    <h3>Reduced Human Interaction</h3>
+                    <p>Overuse of AI tutors and assistants may diminish valuable face-to-face interactions with teachers and peers, which are essential for developing social skills and collaborative abilities.</p>
+                </div>
+                <div class="disadvantage-card">
+                    <h3>Bias and Inequality</h3>
+                    <p>AI systems can perpetuate existing biases present in their training data, potentially disadvantaging certain groups of students. Additionally, unequal access to AI technology can widen educational disparities.</p>
+                </div>
+                <div class="disadvantage-card">
+                    <h3>Accuracy and Misinformation</h3>
+                    <p>AI tools can produce incorrect or misleading information presented with confidence, leading students to accept and learn false information if they don't critically verify sources.</p>
+                </div>
             </div>
         </section>
     </div>
-
-
+    
+    <footer>
+        <p>Nevan Torres, 2025</p>
+    </footer>
 </body>
 </html>

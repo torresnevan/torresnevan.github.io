@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI in Education - Pros & Cons</title>
+    <title>AI in Education - Advantages</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
         }
-
         nav {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 1rem 0;
@@ -25,7 +23,6 @@
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
         nav ul {
             list-style: none;
             display: flex;
@@ -35,11 +32,9 @@
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         nav ul li {
             margin: 0 1rem;
         }
-
         nav ul li a {
             color: white;
             text-decoration: none;
@@ -49,37 +44,30 @@
             transition: background 0.3s ease;
             font-weight: 500;
         }
-
         nav ul li a:hover {
             background: rgba(255,255,255,0.2);
         }
-
         nav ul li a.active {
             background: rgba(255,255,255,0.3);
         }
-
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 3rem 2rem;
             text-align: center;
         }
-
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
-
         section {
-            margin: 2rem 0;
+            margin: 3rem 0;
         }
-
         h2 {
             color: #667eea;
             font-size: 1.8rem;
@@ -87,66 +75,77 @@
             border-bottom: 3px solid #667eea;
             padding-bottom: 0.5rem;
         }
-
-        .two-column {
+        .content-box {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #667eea;
+        }
+        .content-box h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+        .advantage-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin: 2rem 0;
         }
-
-        .column {
-            background: #f9f9f9;
+        .advantage-card {
+            background: white;
             padding: 1.5rem;
             border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+            transition: transform 0.3s ease;
         }
-
-        .column.pros {
-            border-left: 4px solid #4caf50;
+        .advantage-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(76,175,80,0.3);
         }
-
-        .column.cons {
-            border-left: 4px solid #f44336;
-        }
-
-        .column h3 {
+        .advantage-card h3 {
+            color: #667eea;
             margin-bottom: 1rem;
+            font-size: 1.3rem;
         }
-
-        .pros h3 {
-            color: #4caf50;
-        }
-
-        .cons h3 {
-            color: #f44336;
-        }
-
         .image-placeholder {
-            background: #f0f0f0;
-            border: 2px dashed #ccc;
-            height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-            color: #999;
-            font-size: 1.1rem;
+            margin: 2rem 0;
+            overflow: hidden;
         }
-
+        .image-placeholder img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+            display: block;
+        }
         .video-placeholder {
             background: #e8e8e8;
             border: 2px dashed #aaa;
-            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 1.5rem 0;
+            margin: 2rem 0;
             border-radius: 8px;
             color: #888;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
         }
-
+        .video-placeholder iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
         footer {
             background: #333;
             color: white;
@@ -154,9 +153,8 @@
             padding: 2rem;
             margin-top: 4rem;
         }
-
         @media (max-width: 768px) {
-            .two-column {
+            .advantage-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -167,64 +165,65 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="plagiarism.html">Plagiarism</a></li>
-            <li><a href="advantages.html">Advantages</a></li>
+            <li><a href="advantages.html" class="active">Advantages</a></li>
             <li><a href="disadvantages.html">Disadvantages</a></li>
             <li><a href="references.html">References</a></li>
         </ul>
     </nav>
-
+    
     <div class="hero">
-        <h1>Pros and Cons of AI in Education</h1>
-        <p>[Introduction to advantages and disadvantages]</p>
+        <h1>Advantages of AI in Education</h1>
+        <p>How AI enhances learning experiences and educational outcomes</p>
     </div>
-
+    
     <div class="container">
         <section>
-            <h2>Overview</h2>
+            <h2>Why AI Benefits Students</h2>
+            <div class="content-box">
+                <p>AI is a revolutionary learning tool for students and educators alike. Students now have free and immediate access to personalized learning support, tailored explanations, and directly relevant explanations. AI's advanced capabilities across math, writing, and science allows the technology to have a wide range of potential educational applications. </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Understanding AI's Educational Impact</h2>
             <div class="video-placeholder">
-                [YouTube Video Embed Placeholder]
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hJP5GqnTrNo?si=dmA_4JqJiPzarM7T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
         <section>
-            <h2>Advantages and Disadvantages</h2>
-            <div class="two-column">
-                <div class="column pros">
-                    <h3>Pros</h3>
-                    <p>[List of advantages placeholder]</p>
+            <h2>Key Advantages</h2>
+            <div class="advantage-grid">
+                <div class="advantage-card">
+                    <h3>Personalized Learning</h3>
+                    <p>AI adapts to individual learning styles, pace, and needs. Students can receive customized content, practice problems tailored to their skill level, and targeted support in areas where they struggle most.</p>
                 </div>
-                <div class="column cons">
-                    <h3>Cons</h3>
-                    <p>[List of disadvantages placeholder]</p>
+                <div class="advantage-card">
+                    <h3>24/7 Availability</h3>
+                    <p>AI tutors and assistants are available anytime, anywhere. Students can get help with homework, clarify concepts, or practice skills outside of classroom hours without waiting for teacher availability.</p>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Impact on Learning</h2>
-            <div class="image-placeholder">
-                [Image Placeholder - Learning Impact]
-            </div>
-        </section>
-
-        <section>
-            <h2>Future Considerations</h2>
-            <div class="two-column">
-                <div class="column pros">
-                    <h3>Opportunities</h3>
-                    <p>[Future opportunities placeholder]</p>
+                <div class="advantage-card">
+                    <h3>Instant Feedback</h3>
+                    <p>AI provides immediate responses to questions and assignments, allowing students to learn from mistakes in real-time and adjust their understanding quickly rather than waiting days for graded work.</p>
                 </div>
-                <div class="column cons">
-                    <h3>Challenges</h3>
-                    <p>[Future challenges placeholder]</p>
+                <div class="advantage-card">
+                    <h3>Accessibility Support</h3>
+                    <p>AI tools can translate content, read text aloud, generate captions, and provide alternative formats to make education more accessible for students with disabilities or language barriers.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Enhanced Engagement</h3>
+                    <p>Interactive AI-powered simulations, games, and virtual labs make learning more engaging and help students visualize complex concepts in subjects like science, math, and engineering.</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Efficient Research</h3>
+                    <p>AI helps students find relevant information quickly, summarize lengthy articles, organize research materials, and discover connections between topics that might otherwise take hours to uncover.</p>
                 </div>
             </div>
         </section>
     </div>
-
+    
     <footer>
-        Nevan Torres
+        <p>Nevan Torres, 2025</p>
     </footer>
 </body>
-
 </html>

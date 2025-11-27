@@ -107,17 +107,42 @@
             font-size: 0.95rem;
         }
 
-        .image-placeholder {
-            background: #f0f0f0;
-            border: 2px dashed #ccc;
-            height: 250px;
+.image-placeholder {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 1.5rem 0;
+            margin: 2rem 0;
+            overflow: hidden;
+        }
+        .image-placeholder img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+            display: block;
+        }
+        .video-placeholder {
+            background: #e8e8e8;
+            border: 2px dashed #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
             border-radius: 8px;
-            color: #999;
-            font-size: 1.1rem;
+            color: #888;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-placeholder iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         footer {
@@ -142,54 +167,61 @@
 
     <div class="hero">
         <h1>References and Resources</h1>
-        <p>[Introduction to cited sources and additional resources]</p>
+        <p>A curated list of online materials and visual guides.</p>
     </div>
 
     <div class="container">
+        
         <section>
-            <h2>Academic Sources</h2>
-            <div class="reference-box">
-                <h3>[Reference Title 1]</h3>
-                <p>[Author, Year, Publication - Citation placeholder]</p>
-            </div>
-            <div class="reference-box">
-                <h3>[Reference Title 2]</h3>
-                <p>[Author, Year, Publication - Citation placeholder]</p>
-            </div>
-            <div class="reference-box">
-                <h3>[Reference Title 3]</h3>
-                <p>[Author, Year, Publication - Citation placeholder]</p>
+            <h2>Visual Guide</h2>
+            <div class="image-placeholder">
+                <img src="/imgs/top.jpg" alt="meow">
             </div>
         </section>
 
         <section>
             <h2>Online Resources</h2>
+            
             <div class="reference-box">
-                <h3>[Website/Resource Title 1]</h3>
-                <p>[URL and description placeholder]</p>
+                <h3>A.I. in School: What It Can and Cannot Do [The New York Times]</h3>
+                <p>https://www.nytimes.com/2025/09/28/opinion/ai-school.html</p>
             </div>
-            <div class="reference-box">
-                <h3>[Website/Resource Title 2]</h3>
-                <p>[URL and description placeholder]</p>
-            </div>
-        </section>
 
-        <section>
-            <h2>Additional Reading</h2>
-            <div class="image-placeholder">
-                [Image Placeholder - Books/Resources]
-            </div>
             <div class="reference-box">
-                <h3>[Book/Article Title 1]</h3>
-                <p>[Author, Year, Publisher - Citation placeholder]</p>
+                <h3>How AI is changing the work of teachers in the classroom [CBS News]</h3>
+                <p>https://www.cbsnews.com/news/artificial-intelligence-school-students-teachers/</p>
             </div>
+
             <div class="reference-box">
-                <h3>[Book/Article Title 2]</h3>
-                <p>[Author, Year, Publisher - Citation placeholder]</p>
+                <h3>Poll: As Americans form views on AI, they're divided on its role in school and everyday life [NBC News]</h3>
+                <p>https://www.nbcnews.com/politics/nbc-news-polls/poll-americans-form-views-ai-divided-role-school-everyday-life-rcna212782</p>
             </div>
+
+            <div class="reference-box">
+                <h3>[Online Resource Title 4]</h3>
+                <p>https://ux.stackexchange.com/questions/141660/can-i-put-a-placeholder-with-a-description-or-example-in-text-fields</p>
+            </div>
+
+            <div class="reference-box">
+                <h3>A.I. School Is in Session: Two Takes on the Future of Education [The New York Times]</h3>
+                <p>https://www.nytimes.com/2025/09/05/podcasts/hardfork-education-alpha-school.html</p>
+            </div>
+
+            <div class="reference-box">
+                <h3>The Educators Embracing AI in the Classroom [NBC News]</h3>
+                <p>https://nbcuacademy.com/ai-education-aiedu/</p>
+            </div>
+
+            <div class="reference-box">
+                <h3>Helping K-12 schools navigate the complex world of AI [MIT News]</h3>
+                <p>https://news.mit.edu/2025/helping-k-12-schools-navigate-complex-world-of-ai-1103</p>
+            </div>
+
         </section>
     </div>
 
-
+    <footer>
+        <p>Nevan Torres</p>
+    </footer>
 </body>
 </html>
